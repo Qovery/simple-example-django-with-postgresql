@@ -1,0 +1,18 @@
+application:
+  name: simple-example-django-with-postgresql
+  project: simple-example-node-with-postgresql
+  cloud_region: aws/eu-west-3
+  publicly_accessible: true
+databases:
+  - type: postgresql
+    version: "11.5"
+    name: my-db
+routers:
+  - name: main
+    custom_domains:
+      - branch: master
+        domain: django.algo.green
+    routes:
+      - application_name: simple-example-django-with-postgresql
+        paths:
+          - /
