@@ -12,7 +12,8 @@ COPY ./requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
 COPY example /usr/src/app/
+COPY entrypoint.sh /usr/src/app
 
 EXPOSE 8000
 
-CMD ["python", "manage.py", "runserver"]
+ENTRYPOINT ["./entrypoint.sh"]
