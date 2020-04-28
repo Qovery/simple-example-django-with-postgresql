@@ -9,9 +9,6 @@ databases:
     name: my-db
 routers:
   - name: main
-    custom_domains:
-      - branch: master
-        domain: django.algo.green
     routes:
       - application_name: simple-example-django-with-postgresql
         paths:
