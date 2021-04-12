@@ -1,15 +1,15 @@
 application:
-  name: simple-example-django-with-postgresql
-  project: simple-example-django-with-postgresql
+  name: attendance-tracker
+  project: Attendance Site
   cloud_region: aws/eu-west-3
   publicly_accessible: true
 databases:
   - type: postgresql
     version: "11.5"
-    name: my-db
+    name: attendance
 routers:
   - name: main
     routes:
-      - application_name: simple-example-django-with-postgresql
+      - application_name: attendance-tracker
         paths:
           - /
