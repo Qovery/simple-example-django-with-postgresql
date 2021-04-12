@@ -6,7 +6,7 @@ application:
 databases:
   - type: postgresql
     version: "11.5"
-    name: my-db
+    name: attendance
 routers:
   - name: main
     routes:
