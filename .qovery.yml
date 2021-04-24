@@ -1,15 +1,15 @@
+---
 application:
-  name: simple-example-django-with-postgresql
-  project: simple-example-django-with-postgresql
-  cloud_region: aws/eu-west-3
-  publicly_accessible: true
+  name: "djpg"
+  project: "raeson"
+  organization: "QoveryCommunity"
 databases:
-  - type: postgresql
-    version: "11.5"
-    name: my-db
+- type: "POSTGRESQL"
+  name: "djpg"
+  version: "11"
 routers:
-  - name: main
-    routes:
-      - application_name: simple-example-django-with-postgresql
-        paths:
-          - /
+- name: "main-djpg"
+  routes:
+  - application_name: "djpg"
+    paths:
+    - "/*"
